@@ -13,6 +13,7 @@
   },
   "externals": {},
   "localizedResources": {
-    "GwBwKalenderWebPartStrings": "lib/webparts/gwBwKalender/loc/{locale}.js"
+    "GwBwKalenderWebPartStrings": "lib/webparts/gwBwKalender/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
   }
 }
