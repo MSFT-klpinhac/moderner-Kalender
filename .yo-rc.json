@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "onprem19",
+    "version": "1.7.1",
+    "libraryName": "moderner-kalender",
+    "libraryId": "5c285020-54ac-435b-bbc8-b6d4df308f28",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "moderner-kalender-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/modernerKalender/ModernerKalenderWebPart.js",
+          "manifest": "./src/webparts/modernerKalender/ModernerKalenderWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ModernerKalenderWebPartStrings": "lib/webparts/modernerKalender/loc/{locale}.js"
+  }
+}

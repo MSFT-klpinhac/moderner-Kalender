@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "moderner-kalender-client-side-solution",
+    "id": "5c285020-54ac-435b-bbc8-b6d4df308f28",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/moderner-kalender.sppkg"
+  }
+}
