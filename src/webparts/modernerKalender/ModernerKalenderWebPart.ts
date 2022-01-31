@@ -10,12 +10,23 @@ import {
 import * as strings from 'ModernerKalenderWebPartStrings';
 import ModernerKalender from './components/ModernerKalender';
 import { IModernerKalenderProps } from './components/IModernerKalenderProps';
+import "@pnp/polyfill-ie11";
+import { sp } from "@pnp/sp";
 
 export interface IModernerKalenderWebPartProps {
   description: string;
 }
 
 export default class ModernerKalenderWebPart extends BaseClientSideWebPart<IModernerKalenderWebPartProps> {
+
+  protected async onInit(): Promise<void> { // https://pnp.github.io/pnpjs/getting-started/
+    return super.onInit().then(_ => {
+      // https://github.com/pnp/pnpjs/issues/978
+      sp.setup({
+        spfxContext: this.context as any
+      });
+    });
+  }
 
   public render(): void {
     const element: React.ReactElement<IModernerKalenderProps > = React.createElement(
