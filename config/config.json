@@ -2,18 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "moderner-kalender-web-part": {
+    "gw-bw-kalender-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/modernerKalender/ModernerKalenderWebPart.js",
-          "manifest": "./src/webparts/modernerKalender/ModernerKalenderWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/gwBwKalender/GwBwKalenderWebPart.js",
+          "manifest": "./src/webparts/gwBwKalender/GwBwKalenderWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "ModernerKalenderWebPartStrings": "lib/webparts/modernerKalender/loc/{locale}.js",
-    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+    "GwBwKalenderWebPartStrings": "lib/webparts/gwBwKalender/loc/{locale}.js"
   }
 }

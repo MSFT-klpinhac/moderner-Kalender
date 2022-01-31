@@ -1,12 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "moderner-kalender-client-side-solution",
-    "id": "5c285020-54ac-435b-bbc8-b6d4df308f28",
+    "name": "gw-bw-kalender-client-side-solution",
+    "id": "ad51482f-66a1-4bc1-aa0e-93fd2a1de495",
     "version": "1.0.0.0",
-    "includeClientSideAssets": true
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
   },
   "paths": {
-    "zippedPackage": "solution/moderner-kalender.sppkg"
+    "zippedPackage": "solution/gw-bw-kalender.sppkg"
   }
 }

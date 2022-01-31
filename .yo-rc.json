@@ -1,11 +1,11 @@
 {
   "@microsoft/generator-sharepoint": {
-    "isCreatingSolution": true,
+    "version": "1.10.0",
+    "libraryName": "gw-bw-kalender",
+    "libraryId": "ad51482f-66a1-4bc1-aa0e-93fd2a1de495",
     "environment": "onprem19",
-    "version": "1.7.1",
-    "libraryName": "moderner-kalender",
-    "libraryId": "5c285020-54ac-435b-bbc8-b6d4df308f28",
     "packageManager": "npm",
+    "isCreatingSolution": true,
     "componentType": "webpart"
   }
 }
