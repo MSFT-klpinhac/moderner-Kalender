@@ -11,11 +11,24 @@ import * as strings from 'GwBwKalenderWebPartStrings';
 import GwBwKalender from './components/GwBwKalender';
 import { IGwBwKalenderProps } from './components/IGwBwKalenderProps';
 
+import "@pnp/polyfill-ie11";
+import { sp } from "@pnp/sp";
+
+
 export interface IGwBwKalenderWebPartProps {
   description: string;
 }
 
 export default class GwBwKalenderWebPart extends BaseClientSideWebPart<IGwBwKalenderWebPartProps> {
+
+  protected async onInit(): Promise<void> { // https://pnp.github.io/pnpjs/getting-started/
+    return super.onInit().then(_ => {
+      // https://github.com/pnp/pnpjs/issues/978
+      sp.setup({
+        spfxContext: this.context as any
+      });
+    });
+  }
 
   public render(): void {
     const element: React.ReactElement<IGwBwKalenderProps > = React.createElement(
